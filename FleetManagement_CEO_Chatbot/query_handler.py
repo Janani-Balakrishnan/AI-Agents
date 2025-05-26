@@ -111,12 +111,12 @@ def find_referenced_collection(db, field_name):
             return collection
     return None
 
-# 🔹 Status Mapping for `tripplanners`
+#  Status Mapping for `tripplanners` , give your custom mapping values if needed
 STATUS_MAPPING = {
     "assigned": 0,
     "scheduled": 1,
     "ongoing": 2,
-    "rejected": 3,
+    "malfunctioned": 3,
     "cancelled": 4,
     "completed": 5,
 }

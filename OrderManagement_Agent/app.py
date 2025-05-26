@@ -53,7 +53,7 @@ if st.session_state["parsed_data"]:
     raw_items = parse_raw_items_from_message(whatsapp_input)
     # Fallback match
     parsed_data['items'] = fallback_match_items(raw_items, material_df)
-    
+
     # Render Header Row
     header_cols = st.columns([4, 2, 2, 1])
     header_cols[0].markdown("**Item**")
@@ -118,6 +118,3 @@ if st.session_state["parsed_data"]:
         }
         st.success("Order created successfully!")
         st.json(order_json)
-
-st.markdown("---")
-st.caption("This POC uses Gemini Flash for parsing and fallback RapidFuzz for product matching.")
