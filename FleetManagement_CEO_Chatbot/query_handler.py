@@ -7,7 +7,7 @@ from pymongo import MongoClient
 # MongoDB connection
 def get_db_connection():
     client = MongoClient("mongodb://localhost:27017/")
-    db = client["DRS"]
+    db = client["Your DB Name"]
     return db
 
 # Get database schema
@@ -119,10 +119,6 @@ STATUS_MAPPING = {
     "rejected": 3,
     "cancelled": 4,
     "completed": 5,
-    "verified": 6,
-    "interrupted": 7,
-    "malfunctioned": 8,
-    "recalled": 9
 }
 
 def map_status_in_query(user_query):
