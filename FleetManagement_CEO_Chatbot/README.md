@@ -6,7 +6,7 @@ It is an intelligent chatbot built for Fleet Management CEOs to interact with th
 
 "can you share the breakdown of all the trips by status."
 
-"List all the Fleet that are malfunctioned"
+"List all the Fleets that are malfunctioned"
 
 The chatbot translates natural language into MongoDB queries and retrieves meaningful, structured responses. It’s implemented without LangChain, offering a lightweight and modular architecture.
 
