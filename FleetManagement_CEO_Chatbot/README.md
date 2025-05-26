@@ -49,7 +49,7 @@ Before testing the chatbot, insert dummy data into your local MongoDB:
 
 python insert_dummy_data.py
 
-This script will create collections like tripplanners and add sample records.
+This script will create collections like trips and add sample records.
 
 4️⃣ Run the Chatbot
 
